@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>لیست تراکنش ها</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="page">
-      <header class="header">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<main class="page">
+    <header class="header">
         <h1>لیست تراکنش ها</h1>
-      </header>
+    </header>
 
-      <section class="search-area">
-        <input id="search" placeholder="جستجو تراکنش..." />
-      </section>
+    <section class="search-area">
+        <input id="search" placeholder="جستجو تراکنش..."/>
+    </section>
 
-      <section id="transactions-section" class="transactions-section hidden">
+    <section id="transactions-section" class="transactions-section hidden">
         <div class="card">
-          <div class="card-title">لیست تراکنش های شما</div>
-          <div class="table-wrap">
-            <table id="tx-table" class="tx-table">
-              <thead>
-                <tr>
-                  <th>ردیف</th>
-                  <th>نوع تراکنش</th>
-                  <th>مبلغ</th>
-                  <th>شماره پیگیری</th>
-                  <th class="sortable">
-                    تاریخ تراکنش <span class="caret">▾</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody id="tx-body">
-                <!-- rows injected by JS -->
-              </tbody>
-            </table>
-          </div>
+            <div class="card-title">لیست تراکنش های شما</div>
+            <div class="table-wrap">
+                <table id="tx-table" class="tx-table">
+                    <thead>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>نوع تراکنش</th>
+                        <th class="sortable">
+                            مبلغ<span class="caret"> ▾ </span>
+                        </th>
+                        <th>شماره پیگیری</th>
+                        <th>تاریخ تراکنش</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tx-body">
+                    <!-- rows injected by JS -->
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="empty-section" class="empty-section">
+    <section id="empty-section" class="empty-section">
         <button id="load-btn" class="load-btn">بار گذاری تراکنش ها</button>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <script src="app.js"></script>
-  </body>
+<script src="app.js"></script>
+</body>
 </html>
